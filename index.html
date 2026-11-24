@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAKSH GAMING × GAJJAR GAMERZ | Professional Gaming &amp; Esports</title>
+<meta name="description" content="DAKSH GAMING × GAJJAR GAMERZ: professional gaming and esports. Gameplay, competitive moments and a community for Free Fire MAX, GTA VI, RDR2, Valorant and God of War fans.">
+<meta name="theme-color" content="#050810">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:title" content="DAKSH GAMING × GAJJAR GAMERZ">
+<meta property="og:image" content="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><div><img src="assets/logo-icon.png" alt="" width="96" height="96"><b>DAKSH GAMING</b><i></i><small>GAJJAR GAMERZ</small></div></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="DAKSH GAMING, home"><img src="assets/logo-icon.png" alt="" width="42" height="42"><span class="lt"><b>DAKSH<span>GAMING</span></b><small>GAJJAR GAMERZ</small></span></a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#games">Games</a><a href="#gameplay">Gameplay</a><a href="#esports">Esports</a><a href="#community">Community</a><a href="#contact">Contact</a>
+    <a class="btn red sm" href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener">Watch my gameplay</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <h1>WELCOME TO<br><em>DAKSH GAMING</em></h1>
+    <p class="tag">PLAY. COMPETE. DOMINATE.<br><span class="bd">BUILT DIFFERENT.</span></p>
+    <p class="lead">Welcome to my gaming universe. Explore epic gameplay, competitive moments, legendary games and the latest gaming content from GAJJAR GAMERZ.</p>
+    <div class="row"><a class="btn red" href="#games">Explore games</a><a class="btn ghost" href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener">Watch on YouTube</a></div>
+    <dl class="stats">
+      <div><dt data-count="100" data-suffix="+">0</dt><dd>Gameplay videos</dd></div>
+      <div><dt data-count="5">0</dt><dd>Featured games</dd></div>
+      <div><dt data-count="1000" data-suffix="+">0</dt><dd>Community members</dd></div>
+    </dl>
+    <p class="note">Stat values are editable placeholders (data-count in index.html).</p>
+  </div>
+  <div class="hero-art"><div class="glow"></div><picture><source srcset="assets/logo.webp" type="image/webp"><img src="assets/logo.jpg" alt="DAKSH GAMING by GAJJAR GAMERZ official logo: Daksh with headset and red esports artwork" width="900" height="900" fetchpriority="high"></picture></div>
+</section>
+<div class="marquee" aria-hidden="true"><div><span>PLAY.</span><span>COMPETE.</span><span>DOMINATE.</span><span>BUILT DIFFERENT.</span><span>DAKSH GAMING × GAJJAR GAMERZ</span><span>PLAY.</span><span>COMPETE.</span><span>DOMINATE.</span><span>BUILT DIFFERENT.</span><span>DAKSH GAMING × GAJJAR GAMERZ</span></div></div>
+
+<section class="sec" aria-labelledby="pl">
+  <h2 id="pl" class="reveal">Choose your platform</h2>
+  <div class="grid4">
+    <a class="plat reveal" href="#games" data-go="pc"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><h3>PC Gaming</h3><span>View games</span></a>
+    <a class="plat reveal" href="#games" data-go="mobile"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><h3>Mobile Gaming</h3><span>View games</span></a>
+    <a class="plat reveal" href="#games" data-go="ps"><svg viewBox="0 0 24 24"><path d="M5 17c-2 0-3-1-3-2s1-1 3-2l6-2V4l4 1v11l-4 2z"/><path d="M15 13c4 .5 6 1 6 2s-2 1.5-6 1.5"/></svg><h3>PlayStation</h3><span>View games</span></a>
+    <a class="plat reveal" href="#games" data-go="xbox"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M7 7c3 3 7 7 10 10M17 7c-3 3-7 7-10 10"/></svg><h3>Xbox</h3><span>View games</span></a>
+  </div>
+</section>
+
+<section class="sec" id="games" aria-labelledby="gt">
+  <div class="head"><h2 id="gt">Game library</h2></div>
+  <div class="filters" id="filters" role="group" aria-label="Filter games by platform">
+    <button class="on" data-f="all">All games</button><button data-f="pc">PC</button><button data-f="mobile">Mobile</button><button data-f="ps">PlayStation</button><button data-f="xbox">Xbox</button>
+  </div>
+  <div class="gamegrid" id="gamegrid"></div>
+  <p class="note">Independent fan content. Not affiliated with or endorsed by any game publisher. Add your own artwork in assets/games/ and edit the GAMES list in script.js.</p>
+</section>
+
+<section class="sec about" id="about" aria-labelledby="ab">
+  <div class="profile reveal"><img class="ph" src="assets/logo.jpg" alt="Daksh, gamer and content creator" width="600" height="600" loading="lazy"></div>
+  <div class="reveal">
+    <h2 id="ab">Behind the controller</h2>
+    <p class="lead">I am DAKSH, a 21-year-old student, professional gamer and content creator. I balance my studies with competitive gaming, exploring legendary game worlds and sharing my journey. Under my secondary identity GAJJAR GAMERZ, I post gameplay, highlights and honest gaming experiences for a growing community. Built different, every match.</p>
+    <dl class="facts"><div><dt>Age</dt><dd>21</dd></div><div><dt>Status</dt><dd>Student</dd></div><div><dt>Role</dt><dd>Professional gamer</dd></div><div><dt>Also</dt><dd>Content creator</dd></div></dl>
+    <ul class="chips"><li>Free Fire MAX</li><li>Valorant</li><li>GTA</li><li>RDR2</li><li>God of War</li></ul>
+    <p>Interests: competitive play, open-world exploration, boss fights and gameplay editing.</p>
+    <a class="btn ghost" href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener">youtube.com/@lxdaksh12</a>
+  </div>
+</section>
+
+<section class="sec" id="gameplay" aria-labelledby="gp">
+  <h2 id="gp" class="reveal">Latest gameplay</h2>
+  <div class="vids" id="vids"></div>
+  <div class="row"><a class="btn red" href="https://youtube.com/@lxdaksh12?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a></div>
+  <p class="note">Placeholders: edit the VIDEOS list at the top of script.js. No live YouTube data is fetched.</p>
+</section>
+
+<section class="sec" id="esports" aria-labelledby="es">
+  <h2 id="es" class="reveal">Gaming highlights</h2>
+  <div class="hl">
+    <div class="reveal" style="--c:#ff7a1a"><h3>Best Free Fire moments</h3><p>Clutch finishes and squad wins.</p></div>
+    <div class="reveal" style="--c:#ff3d9a"><h3>Epic GTA adventures</h3><p>Chaos across the open world.</p></div>
+    <div class="reveal" style="--c:#ff253a"><h3>Valorant competitive matches</h3><p>Ranked rounds and aim duels.</p></div>
+    <div class="reveal" style="--c:#d4872a"><h3>RDR2 exploration</h3><p>Quiet trails and wild stories.</p></div>
+    <div class="reveal" style="--c:#00c8ff"><h3>God of War boss battles</h3><p>Big fights, bigger moments.</p></div>
+  </div>
+</section>
+
+<section class="sec community" id="community" aria-labelledby="cm">
+  <p class="brandline">DAKSH GAMING × GAJJAR GAMERZ</p>
+  <h2 id="cm">Join the DAKSH GAMING community</h2>
+  <p class="lead">Gaming is better together. Join the community, watch my gameplay and become part of the journey.</p>
+  <div class="row center">
+    <a class="btn soc" href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 8s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C15.9 4.5 12 4.5 12 4.5s-3.9 0-6.9.2c-.4.1-1.4.1-2.2 1C2.2 6.4 2 8 2 8s-.2 1.9-.2 3.7v1.7C1.8 15.1 2 17 2 17s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.2 6.7.2 6.7.2s3.9 0 6.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.7C22.2 9.9 22 8 22 8zM10 15V9l5.2 3z"/></svg>YouTube</a>
+    <!-- EDIT: replace the # links below -->
+    <a class="btn soc" href="#" data-todo="Add your Instagram URL in index.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>Instagram</a>
+    <a class="btn soc" href="https://discord.com/invite/yazhxPuThJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 5a16 16 0 0 0-4-1.2l-.5 1a14 14 0 0 0-5 0l-.5-1A16 16 0 0 0 5 5C2.5 9 1.8 12.8 2.1 16.5a16 16 0 0 0 5 2.5l1-1.7a10 10 0 0 1-1.6-.8l.4-.3a11 11 0 0 0 10.2 0l.4.3c-.5.3-1 .6-1.6.8l1 1.7a16 16 0 0 0 5-2.5c.4-4.3-.7-8.1-2.9-11.5zM9 14.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/></svg>Discord</a>
+  </div>
+</section>
+
+<section class="sec" id="news" aria-labelledby="nw">
+  <h2 id="nw" class="reveal">News and updates <small>(demo content, editable)</small></h2>
+  <div class="grid4">
+    <article class="news reveal"><small>Game updates</small><h3>Sample: Patch notes recap</h3><p>Replace with your own summary.</p></article>
+    <article class="news reveal"><small>Announcements</small><h3>Sample: Channel announcement</h3><p>Share upcoming streams here.</p></article>
+    <article class="news reveal"><small>Esports</small><h3>Sample: Tournament watch</h3><p>Add results and schedules.</p></article>
+    <article class="news reveal"><small>New releases</small><h3>Sample: Release spotlight</h3><p>Highlight new titles you play.</p></article>
+  </div>
+</section>
+<section class="sec contact" id="contact" aria-labelledby="ct">
+  <h2 id="ct" class="reveal">Contact</h2>
+  <p class="lead reveal">Want to play together, collaborate or just talk games? Join my Discord server or message me on YouTube.</p>
+  <div class="row">
+    <a class="btn red" href="https://discord.com/invite/yazhxPuThJ" target="_blank" rel="noopener">Join my Discord</a>
+    <a class="btn ghost" href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener">YouTube channel</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="fl"><img src="assets/logo-icon.png" alt="" width="56" height="56"><div><b>DAKSH GAMING × GAJJAR GAMERZ</b><br><span>PLAY. COMPETE. DOMINATE. BUILT DIFFERENT.</span></div></div>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About</a><a href="#games">Games</a><a href="#gameplay">Gameplay</a><a href="#community">Community</a><a href="https://youtube.com/@lxdaksh12" target="_blank" rel="noopener">YouTube</a><a href="https://discord.com/invite/yazhxPuThJ" target="_blank" rel="noopener">Discord</a></nav>
+  <p>© 2026 DAKSH GAMING. All Rights Reserved.</p>
+  <button id="top" aria-label="Back to top">↑</button>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
